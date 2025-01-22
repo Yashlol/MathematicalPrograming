@@ -56,7 +56,7 @@ import os
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'visualizer', 'templates/visualizer')],  # Include the templates directory
+        'DIRS': [BASE_DIR / 'templates'],  # Add this if you have global templates
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -68,6 +68,7 @@ TEMPLATES = [
         },
     },
 ]
+
 
 
 WSGI_APPLICATION = 'MathematicalPrograming.wsgi.application'

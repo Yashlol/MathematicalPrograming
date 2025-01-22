@@ -9,6 +9,10 @@ import base64
 from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator
 
+def home(request):
+    """Render the home page to select the method."""
+    return render(request, 'index.html')
+
 def plot_constraints(constraints, bounds, feasible_region=None, optimal_vertex=None):
     """Plots the constraints, feasible region, and optimal solution."""
     x = np.linspace(bounds[0], bounds[1], 400)
