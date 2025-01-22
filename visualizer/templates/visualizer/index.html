@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Linear Programming Method</title>
+</head>
+<body>
+    <h1>Select the Method</h1>
+    <form action="{% url 'solve_linear_program' %}" method="get">
+        <label for="method">Choose Maximization or Minimization:</label>
+        <select name="method" id="method">
+            <option value="max">Maximization</option>
+            <option value="min">Minimization</option>
+        </select>
+        <button type="submit">Next</button>
+    </form>
+</body>
+</html>
